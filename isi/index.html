@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Banner</title>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="ad.size" content="width=1080,height=1920">
+        <meta name="format-detection" content="telephone=no">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            body{
+                margin:0;
+                padding:0;
+            }
+
+            div{
+                position:absolute;
+                margin:0;
+                padding:0;
+            }
+
+            .banner{
+                width:1080px;
+                height:1280px;
+                background:#fff;
+                overflow:hidden;
+                box-sizing:border-box;
+    			position:relative;
+            }
+    		
+    		.banner2{
+                top:0px;
+                width:1080px;
+                height:640px;
+                background:#fff;
+                overflow:hidden;
+                box-sizing:border-box;
+    			position:relative;
+            }
+            
+            #isi-container{
+                top:0px;
+                width:100%;
+                height:620px;
+                overflow:hidden;
+                font-size:18px;
+                position:static;
+            }
+
+            #isi{
+                width:100%;
+                height:620px;
+                overflow-x:hidden;
+                padding:0 160px 0 0px;
+                font-family:'Montserrat', Arial, "sans-serif";
+            }
+
+            #isi p,ul{
+                font-size:25px;
+                line-height:28px;
+                letter-spacing:1px;
+                word-spacing:-1px;
+                color:#025B94;
+                margin-top:15px;
+                margin-bottom:0px;
+            }
+
+            #isi h1{
+                font-size:24px;
+                letter-spacing:1px;
+                word-spacing:0.5px;
+                font-weight:bold;
+                color:#C041AF;
+                margin:0px;
+            }
+
+            #isi h2{
+                font-size:24px;
+                letter-spacing:1px;
+                word-spacing:0.5px;
+                font-weight:bold;
+                color:#C041AF;
+                margin-top:36px;
+            }
+            
+            #isi ul{
+                list-style:none;
+                margin-top:16px;
+                margin-left:7px;
+            }
+
+            #isi li{margin:0 0 6px -29px;}
+
+            #isi li::before{
+                position:absolute;
+                content:"•";
+                display:inline-block;
+                font-size:22px;
+                margin-left:-18px;
+                margin-top:5px;
+                line-height:23px;
+    			font-family:'Montserrat', Helvetica, Arial, "sans-serif";
+            }
+           
+            #isi .bold{font-weight:bold;}
+
+            #isi .copy{
+                font-size:20px;
+                line-height:35px;
+                margin-top:50px;
+            }
+
+            #isi .link{
+                text-decoration:underline;
+                text-decoration-style:solid;
+                font-weight:normal;
+            }
+
+            #isi .list::before{
+                position:absolute;
+                content:'•';
+                margin-left:20px;
+            }
+
+            #isi .nobr{white-space:nowrap;}
+
+            #logo{
+                width:224px;
+                height:auto;
+                margin-top:44px;
+            }
+
+            .boxed_warning{
+                position:relative;
+                padding:10px;
+                border:#666 1px solid;
+            }
+
+            .pc-all{width:84%;}
+
+            .nobr{white-space:nowrap;}
+
+            .link{
+                text-decoration:underline; 
+                color:#025B94;
+                cursor:pointer;
+            }
+          
+          #isiBack {
+            background-image: url("isi.jpg");
+            background-size: 1080px 1571px;
+            width: 1080px !important;
+            height: 1571px;
+            background-repeat: no-repeat;
+            position: relative;
+          }
+          #prescribing, #prescribingBlue {
+            position:absolute;
+            top: 212%;
+            left: 17%;
+            width: 23%;
+            height:35px;
+            background-color:rebeccapurple;
+            opacity:0;
+            cursor:pointer;
+          }
+
+          #prescribingBlue {
+            top:9%;
+            left: 12%;
+          } 
+          
+          #patient, #patientBlue {
+            position:absolute;
+            top: 212%;
+            left: 50%;
+            width: 20%;
+            height:35px;
+            background-color:rebeccapurple;
+            opacity:0;
+            cursor:pointer;
+          }
+
+          #patientBlue {
+            top:9%;
+            left: 40%;
+          } 
+          
+        </style>
+	</head>
+    <body>
+    <div class="banner2">
+        <div id="isi-container">
+            <div id="isi">
+              <div id="isiBack"></div>
+              <div id="prescribingBlue"></div>
+              <div id="prescribing"></div>
+              <div id="patientBlue"></div>
+              <div id="patient"></div>
+              
+                <!--<h1>IMPORTANT SAFETY INFORMATION</h1>
+
+                <p>Your child should not take Beyfortus if your child has a history of serious allergic reactions to nirsevimab-alip or any of the ingredients in Beyfortus.</p>
+                <p>Before your child receives Beyfortus, tell your healthcare provider about all of your child's medical conditions, including if your child:</p>
+
+                <ul>
+                    <li>has ever had a reaction to Beyfortus.</li>
+                    <li>has bleeding or bruising problems. If your child has a problem with bleeding or bruises easily, an injection could cause a problem.</li>
+                </ul>
+
+                <p>Tell your healthcare provider about all the medicines your child takes, including prescription and over-the-counter medicines, vitamins, and herbal supplements. Your infant should not receive a medicine called palivizumab if they have already received Beyfortus in the same RSV season.</p>
+                <p>Serious allergic reactions have happened with Beyfortus. Get medical help right away if your child has any of the following signs or symptoms of a serious allergic reaction:</p>
+                    
+                <ul>
+                    <li>swelling of the face, mouth, or tongue</li>
+                    <li>difficulty swallowing or breathing</li>
+                    <li>unresponsiveness</li>
+                    <li>bluish color of skin, lips, or under fingernails</li>
+                    <li>muscle weakness</li>
+                    <li>severe rash, hives, or itching</li>
+                </ul>
+
+                <p>The most common side effects of Beyfortus include rash and pain, swelling,&nbsp;or hardness at the site of your child's injection. These are not all the possible side effects of Beyfortus. Call your healthcare provider if you have questions about side effects.</p>
+                <p>Please see full <span id="prescribing" class="link" onclick="exits(event)">Prescribing Information</span>, including <span id="patient" class="link" onclick="exits(event)">Patient Information</span>, for more details.</p>
+
+                <h2>INDICATION</h2>
+
+                <p>Beyfortus is a prescription medicine used to help prevent a serious lung disease caused by Respiratory Syncytial Virus (RSV) in:</p>
+
+                <ul>
+                    <li>Newborns and babies under 1 year of age born during or entering their first RSV season.</li>
+                    <li>Children up to 24 months of age who remain at risk of severe RSV disease through their second RSV season.</li>
+                </ul>
+
+                <img id="logo" src="logo.png" alt="Sanofi">
+
+                <p class="copy">&copy; 2025 Sanofi. All rights reserved.<br/>MAT-US-2501234-v1.0-03/2025</p>-->
+            </div>
+        </div>
+	</div>		
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="isi.js"></script>
+    <script>
+        function init(){
+            tl = new TimelineMax();
+            
+            newscroller = new Scroller({
+                container:'#isi-container',
+                content:'#isi',
+                autoscroll:false,
+                speed:30,
+                delay:15,
+                specificWord:['specific word 1','specific word 2']
+            });
+            
+			document.querySelector('#prescribing').addEventListener('click', exits);
+            document.querySelector('#patient').addEventListener('click', exits);
+          document.querySelector('#prescribingBlue').addEventListener('click', exits);
+            document.querySelector('#patientBlue').addEventListener('click', exits);
+			document.querySelector('#fda').addEventListener('click', exits);
+        }
+
+        function exits(e){
+            switch(e.target.id){
+                case 'prescribingBlue':
+				        case 'prescribing':
+                    window.open('https://products.sanofi.us/beyfortus/beyfortus.pdf');
+                break;
+                case 'patientBlue':
+                case 'patient':
+                    window.open('https://products.sanofi.us/beyfortus/beyfortus_patient-info.pdf');
+                break;
+				        case 'fda':
+                    window.open('https://www.fda.gov/medwatch');
+                break;
+               
+                default:
+                break;
+            }
+        }
+
+        window.onload = init;
+    </script>
+</body>
+</html>
